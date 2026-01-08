@@ -24,7 +24,7 @@ with col1:
         
         st.markdown('<div style="margin-top:25px;"></div>', unsafe_allow_html=True)
         st.subheader("🧠 Ask the AI")
-        # Enter key automatically triggers a rerun in st.text_input
+        
         query = st.text_input("Enter your request...", placeholder="e.g., Extract items from this bill", key="query_input")
         
         st.markdown('<div style="margin-top:10px;"></div>', unsafe_allow_html=True)
@@ -53,7 +53,7 @@ if (btn_clicked or (query and query != st.session_state.get('last_run_query', ''
         st.subheader("📊 Extraction Intelligence")
         st.write(response.text)
     
-    # 5. TRIGGER THE SCROLL
+    
     scroll_to_bottom()
 
 elif btn_clicked and not file:

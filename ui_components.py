@@ -61,7 +61,7 @@ def scroll_to_bottom():
             }, 500);
         </script>
     """
-    # This component must be rendered to execute the JS
+    
     html(js_code, height=0)
 
 def render_header():
